@@ -1,0 +1,82 @@
+.sidenav-container {
+    width: 200px;
+    height: 100%;
+    background: #18385C;
+    margin: -72px 0 0 -5px;
+   
+}
+.sidenav-content {
+    width: 100%;
+    background: #18385C;
+}
+.sidenav-content div{
+  margin-bottom: 8px;
+  height: 55px;
+  border: 2px solid #18385C;
+  padding: 16px;
+  border-radius: 10px,0px,0px,10px;
+}
+.sidenav-content a {
+  width: 100%;
+  padding: 8px 0px 8px 0px;
+  text-decoration: none;
+  font-size: 25px;
+  gap: 30px;
+  width: 100%;
+}
+ 
+.sidenav-content div:hover{
+  width:100%;
+  background-color: aliceblue;
+  border: 2px solid aliceblue;
+  border-radius: 20px 0px 0px 20px;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  height: 65px;
+}
+
+.Dashboard img:hover{
+    background-color: #18385C;
+    border: 2px solid #18385C;
+}
+.Pet img:hover{
+    background-color: #18385C;
+    border: 2px solid #18385C;
+}
+.Profile img:hover{
+    background-color: #18385C;
+    border: 2px solid #18385C;
+}
+ 
+.sidenav-content a:hover{
+  color: black;
+}
+
+/* .sidenav-content{
+  padding: 16px;
+} */
+ 
+/* src/app/sidenav/sidenav.component.css */
+.sidenav-container {
+    height: 100%;
+  }
+ 
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+   
+  }
+  .sidenav-content a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .vetdetails{
+    top: -100;
+  }
+
+  .avd{
+    position: fixed;
+    border: 2px solid black;
+  }

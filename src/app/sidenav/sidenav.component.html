@@ -1,0 +1,42 @@
+<app-navbar></app-navbar>
+<div class="flex-row">
+<table style="width: 100%;">
+  <tbody>
+    <tr>
+      <td scope="col"><mat-sidenav-container class="sidenav-container vh-100">
+    
+    <mat-sidenav-content class="sidenav-content overlay">    
+        <mat-list-item style="margin-left: 20x;">
+            <img routerLink="/" src="./assets/images/petzey_logo-removebg-preview 1.svg" alt="PetZey" class="profile-picture">
+        </mat-list-item>
+        <br>
+            <div class="dib">
+              <a routerLink="/body"><img src="./assets/images/dashboard.svg" alt="Dashboard" class="Dashboard">&nbsp;Dashboard</a>
+            </div>
+         
+            <div class="dib">
+              <i class="fas fa-cloud"></i>
+              <a routerLink="/about"><img src="./assets/images/pet-14-svgrepo-com 1.svg" alt="Pet" class="Pet">&nbsp;Pets</a>
+            </div>
+         
+            <div class="dib">
+              <a (click)= "unhide()"><img src="./assets/images/profile.svg" alt="Profile" class="Profile">&nbsp;Profile</a>
+            </div>
+         
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</td>
+<p *ngIf="hide; then temp; else muh"></p>
+<ng-template #temp>
+<td scope="col" class="d-flex align-items-start" id="avd"><app-vet-detail></app-vet-detail></td>
+</ng-template>
+<ng-template #muh>
+<td scope="col" class="d-flex align-items-start"> <app-allvets></app-allvets> </td>
+</ng-template>
+
+ </tr>
+ </tbody>
+</table>
+
+</div>
